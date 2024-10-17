@@ -14,6 +14,10 @@ The original path and filename where the file was stored at the time of the back
 
 Contains the BLAKE2b 64-byte checksum digest of the entire file. 
 
+## content
+
+Contains the contents of the file, base85 encoded.
+
 ## compression_algo (Optional[str])
 
 Contains information about the algorithm used to compress the file.
