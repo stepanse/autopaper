@@ -39,3 +39,4 @@ markdown_extensions:
 
 nav:
   - Introduction: "index.md"
+  - CLI arguments: "args.md"
