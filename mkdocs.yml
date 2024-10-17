@@ -40,3 +40,4 @@ markdown_extensions:
 nav:
   - Introduction: "index.md"
   - CLI arguments: "args.md"
+  - Data format: "data_format.md"
