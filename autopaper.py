@@ -29,8 +29,4 @@ parser.add_argument("mode", choices=["backup", "restore"], default="backup", hel
 parser.add_argument("dest", help="destination to store backup or source from which to restore")
 
 args = parser.parse_args()
-env = Env(args.dest, args.mode, args.force_compress, args.password, args.password, source=None)
-if args.file is not None:
-    env.source = pathlib.Path(args.source)
-
-
+env = Env(args.dest, args.mode, args.force_compress, args.password, args.password, source=args.file)
