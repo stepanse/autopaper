@@ -19,3 +19,7 @@ Boolean optional value (defaults to False)
 
 If True, we always compress all files.
 If False, we check whether files are reasonable to compress before compressing them.
+
+## --source, -s
+
+Source file(s) to be backed up
