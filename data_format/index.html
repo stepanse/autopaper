@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../args/" rel="prev"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.5.39" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.5.40" name="generator"/>
 <title>Data format - AutoPaper</title>
 <link href="../assets/stylesheets/main.8c3ca2c6.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -280,7 +280,7 @@
 <h2 id="filename-string">filename (string)</h2>
 <p>The original path and filename where the file was stored at the time of the backup.</p>
 <h2 id="checksum-str">checksum (str)</h2>
-<p>Contains the BLAKE2b 64-byte checksum digest of the entire file. </p>
+<p>Contains the SHA256 checksum digest of the entire file. </p>
 <h2 id="content">content</h2>
 <p>Contains the contents of the file, base85 encoded.</p>
 <h2 id="compression_algo-optionalstr">compression_algo (Optional[str])</h2>
