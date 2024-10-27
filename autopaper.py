@@ -50,3 +50,11 @@ parser.add_argument("dest", help="destination to store backup or source from whi
 
 args = parser.parse_args()
 env = Env(args.dest, args.mode, args.force_compress, args.password, args.password, source=args.file)
+
+if env.mode == "backup":
+    raise NotImplementedError
+elif env.mode == "restore":
+    raise NotImplementedError
+else:
+    # invalid mode
+    raise ValueError(f"unsupported mode {env.mode}")
