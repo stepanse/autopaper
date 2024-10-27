@@ -22,6 +22,10 @@ Contains the contents of the file, base85 encoded.
 
 Contains information about the algorithm used to compress the file.
 
+## encrypted (bool)
+
+Boolean, defines whether the file was encrypted (should we ask for a decryption password)
+
 ## chunk (Optional[int])
 
 None if the file is not divided into chunks across multiple codes.
