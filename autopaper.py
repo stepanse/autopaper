@@ -17,6 +17,26 @@ class Env:
     """encryption password"""
     source: Optional[Union[pathlib.Path, List[pathlib.Path]]]
     """files to be backed up"""
+
+@dataclass
+class FileToBackup:
+    format_ver: int
+    """Metadata format version"""
+    filename: str
+    """Original filepath"""
+    checksum: str
+    """File SHA256 checksum digest"""
+    content: str
+    """base-85 encoded file content"""
+    compression_algo: Optional[str]
+    """Compression algorithm used to compress the file"""
+    encrypted: bool
+    """Whether the file was encrypted"""
+    chunk: Optional[int]
+    "If not None, number of chunk stored in this code"
+    chunks_total: Optional[int]
+    """Number of total chunks needed to put together file"""
+
 parser = argparse.ArgumentParser(
     description="paper-based file backups made easy",
     epilog="see https://stepanse.github.io/autopaper for docs"
