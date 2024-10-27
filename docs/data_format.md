@@ -12,7 +12,7 @@ The original path and filename where the file was stored at the time of the back
 
 ## checksum (str)
 
-Contains the BLAKE2b 64-byte checksum digest of the entire file. 
+Contains the SHA256 checksum digest of the entire file. 
 
 ## content
 
